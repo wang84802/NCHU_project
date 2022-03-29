@@ -1,0 +1,13 @@
+# 忽略 config 目錄下的 database.yml 檔案
+DL/config.py
+DL/data
+knapsack/dp/config.py
+knapsack/hc/config.py
+knapsack/sa/config.py
+knapsack/p07_c.txt
+knapsack/p07_w.txt
+knapsack/p07_p.txt
+knapsack/p07_s.txt
+ML/config.py
+ML/train.csv
+ML/test.csv
