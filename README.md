@@ -1,11 +1,13 @@
 # machine learning
 
-    1. training data 分為訓練集 and 測試集
-    2. 用 training data 訓練各模型
-    3. predict with test data
-    4. predict with train data
-    5. 針對 test, train data 輸出 confusion matrix
-    6. 針對 test, train data 輸出 performance matrix
+    # process
+    
+        1. training data 分為訓練集 and 測試集
+        2. 用 training data 訓練各模型
+        3. predict with test data
+        4. predict with train data
+        5. 針對 test, train data 輸出 confusion matrix
+        6. 針對 test, train data 輸出 performance matrix
 
     ※SVM, KNN在test data表現較好, 但在train data仍有錯誤的情況
     ※DT, RF在test data表現較差, 但在train data效果極佳
@@ -39,7 +41,8 @@
                 res - item i價值
                 w - item i重量
            
-        3. check result is correct or not
+        3. 
+        check result is correct or not
 
     2. Hill climbing
 
@@ -80,6 +83,7 @@
            return max of values
 
     # process
+
         1. 隨機一個重量<=capacity的解
         2. 將此解輸出成01 bitstring, 0:物品有拿 1:物品沒拿
 
