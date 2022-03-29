@@ -96,23 +96,23 @@
 
     ※hc, sa都有機會只找到local minima
 
-# deep learning with CNN
+# deep learning
 
-# process
+    # process
 
-    1. 資料整理
-        將img資料 & 花的種類 分別放到x, y array
-    2. 資料分成訓練集 & 測試集
-    2. image data augmentation
-        透過rescale, rotate增強資料 加強CNN辨識度
-    3. 建立CNN模型
-        1. 四層convolution & maxpooling
-            receptive field大小 3*3, pool大小 2*2
-        2. Flatten()轉為一維陣列
-        3. dropout避免overfitting
-        4. 用softmax函數將機率最大的分類到對應花種類
-    4. 訓練模型
-    5. predict
-    6. 輸
+        1. 資料整理
+            將img資料 & 花的種類 分別放到x, y array
+        2. 資料分成訓練集 & 測試集
+        2. image data augmentation
+            透過rescale, rotate增強資料 加強CNN辨識度
+        3. 建立CNN模型
+            1. 四層convolution & maxpooling
+                receptive field大小 3*3, pool大小 2*2
+            2. Flatten()轉為一維陣列
+            3. dropout避免overfitting
+            4. 用softmax函數將機率最大的分類到對應花種類
+        4. 訓練模型
+        5. predict
+        6. 輸出confusion, performance matrix
 
-    ※最後accuracy落在75%左右 還沒有找到方法提高
+        ※最後accuracy落在75%左右 還沒有找到方法提高
