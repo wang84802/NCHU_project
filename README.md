@@ -98,7 +98,7 @@
                      紀錄是否為最大價值
                   溫度下降
 
-    ※hc, sa都有機會只找到local minima
+    ※hc, sa都有機率只找到local minima
 
 # deep learning
 
@@ -119,4 +119,4 @@
         5. predict
         6. 輸出confusion, performance matrix
 
-        ※最後accuracy落在75%左右 還沒有找到方法提高
+    ※最後accuracy落在75%左右 還沒有找到方法提高
