@@ -9,8 +9,10 @@
         5. 針對 test, train data 輸出 confusion matrix
         6. 針對 test, train data 輸出 performance matrix
 
-    ※SVM, KNN在test data表現較好, 但在train data仍有錯誤的情況
-    ※DT, RF在test data表現較差, 但在train data效果極佳
+    ※SVM 在test data上有較高的precision準確率 但在train data上仍有失誤的情況
+      KNN 在test data表現較好 在鄰居數量為8時有最好的表現 
+          且有較高的recall召回率, f1-score 但在train data仍有失誤的情況
+      DT, RF在test data表現較差, 但在train data效果極佳
 
 # knapsack
     
@@ -90,13 +92,16 @@
                 ex: 10個物品,只有物品3有拿
                 bitstring 為 0010000000
         3. 溫度下降
+                初始溫度: 1000
+                最終溫度: 1
+                時間衰減率: 0.99
                 
                 while(溫度還沒下降到指定溫度):
                   隨機改變一個物品狀態從0->1 or 1->0
                   if 新價值較高 or 機率符合條件:
                      允許改變
                      紀錄是否為最大價值
-                  溫度下降
+                  溫度下降(t = t*eta)
 
     ※hc, sa都有機率只找到local minima
 
@@ -119,4 +124,4 @@
         5. predict
         6. 輸出confusion, performance matrix
 
-    ※最後accuracy落在75%左右 還沒有找到方法提高
+    ※最後accuracy落在70%左右
